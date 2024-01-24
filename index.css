@@ -47,6 +47,7 @@ header a button {
   margin: 0 5px;
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 header a button:hover {
   color: var(--primary-color);
