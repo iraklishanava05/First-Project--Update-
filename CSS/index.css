@@ -1,0 +1,332 @@
+:root {
+  --primary-color: #ffcda2;
+  --secondary-color: #201e1f;
+  --third-color: #5b7b7a;
+  --text-shodow: 0 0 10px var(--primary-color);
+  --border-bottom: 2px solid #ffcda2;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(var(--secondary-color), var(--third-color));
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ------------------Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 10px;
+  height: 80px;
+  width: 100%;
+  font-style: italic;
+  border-bottom: 2px solid #ffcda2;
+  background-image: linear-gradient(
+    -10deg,
+    var(--secondary-color),
+    var(--third-color)
+  );
+}
+
+header a {
+  margin: 0px 7px;
+  font-size: 20px;
+  color: rgb(171, 160, 160);
+  text-decoration: none;
+  transition: 0.5s ease-out;
+}
+
+header div.container a.active {
+  color: var(--third-color);
+  text-shadow: 1px 1px 1px;
+}
+
+header .aside {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header .aside span {
+  margin: 0 30px;
+  font-size: 26px;
+  color: black;
+  animation-name: aside-span;
+  animation-duration: 5s;
+}
+
+@keyframes aside-span {
+  0% {
+    color: #201e1f;
+    margin: -1000px;
+  }
+
+  25% {
+    margin: 0 10px;
+  }
+
+  50% {
+    color: var(--primary-color);
+    text-shadow: var(--text-shodow);
+  }
+
+  100% {
+    color: #201e1f;
+  }
+}
+
+header .aside div.svg img {
+  width: 64px;
+  height: 64px;
+  margin: 0 10px;
+}
+
+header .aside div.svg {
+  margin: 0 -10px;
+  z-index: 1000;
+  color: rgba(215, 145, 33, 0.423);
+  width: 75px;
+}
+
+/* ------------------Header-END */
+
+/* ------------------main-article.banner */
+
+main article.banner {
+  width: 100%;
+  height: 100%;
+  background-image: url("../photo/pexels-christel-jensen-628776.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+main article.banner div.overlay {
+  width: 100%;
+  height: 100%;
+  padding: 100px 0;
+  background-color: rgba(0, 0, 0, 0.32);
+}
+
+main article.banner div.overlay div.text {
+  width: 100%;
+  height: 100%;
+  font-size: 6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #f2edd7ff;
+  text-shadow: white 0 0 5px;
+}
+
+main article.banner div.overlay div.button a {
+  text-decoration: none;
+}
+
+main article.banner div.overlay div.button a button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 25px;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 3px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  color: white;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+main article.banner div.overlay div.button button:hover {
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 0 15px;
+}
+
+/* ------------------main-article.banner-END */
+
+/* ------------------main-section.choises */
+
+main section.choises {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 200px 0;
+  border-bottom: var(--border-bottom);
+}
+
+main section.choises div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  margin: 100px auto;
+}
+
+main section.choises div span {
+  font-size: 34px;
+  color: white;
+  text-shadow: var(--text-shodow);
+}
+
+main section.choises div p {
+  color: #d5d5d5;
+}
+
+/* ------------------main-section.choises-END */
+
+/* ------------------main-section.about */
+
+main section.about {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+  height: 100%;
+  padding: 200px 0;
+  background-image: linear-gradient(70deg, #f1f4ffff, #a2a2a1ff);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+main section.about div {
+  width: 100%;
+  height: 100%;
+}
+
+main section.about div.paragraph {
+  color: var(--third-color);
+  margin: 10px 10px;
+  max-width: 90%;
+}
+
+main section.about div.image {
+  background-image: url("../photo/chinese-food-in-box-free-svg-file.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0px;
+}
+
+/* ------------------main-section.about-END */
+
+/* ------------------main-section.order */
+
+main section.order {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+  padding: 150px 0;
+  background-image: linear-gradient(
+    -20deg,
+    var(--secondary-color),
+    var(--third-color)
+  );
+}
+main section.order div.svg-delivery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main section.order div.online-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main section.order div.online-order h1 {
+  font-size: 3vw;
+  line-height: 60px;
+  margin: 0 10px;
+  color: var(--third-color);
+}
+
+main section.order div.online-order div.wrap form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+}
+
+main section.order div.online-order div.wrap form input {
+  width: 200px;
+  height: 30px;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--third-color);
+  margin: 38px 10px;
+  font-size: 18px;
+  color: rgb(158, 156, 156);
+  cursor: pointer;
+}
+
+main section.order div.online-order div.wrap form input::placeholder {
+  color: rgb(158, 156, 156);
+}
+
+main section.order div.online-order div.wrap form select {
+  width: 200px;
+  height: 30px;
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--third-color);
+  margin: 40px 10px;
+  outline: none;
+  color: rgb(158, 156, 156);
+  cursor: pointer;
+}
+
+main section.order div.online-order div.wrap form select option {
+  background-color: var(--third-color);
+  color: var(--primary-color);
+}
+
+main section.order div.online-order div.wrap div.button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+main section.order div.online-order div.wrap div.button button {
+  width: 180px;
+  height: 30px;
+  margin: 40px 0;
+  border: 1px solid var(--primary-color);
+  background: transparent;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: 0.15s ease-in;
+  box-shadow: 1px 1px 10px 0.2px var(--third-color);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+main section.order div.online-order div.wrap div.button button:hover {
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: var(--secondary-color);
+  box-shadow: 1px 1px 20px 5px var(--third-color);
+}

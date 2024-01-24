@@ -1,0 +1,45 @@
+@media screen and (max-width: 780px) {
+  main section.choises {
+    grid-template-columns: 1fr;
+  }
+
+  main section.choises div {
+    margin: 100px auto;
+  }
+
+  main section.about {
+    grid-template-columns: 1fr;
+  }
+
+  main section.order {
+    grid-template-columns: 1fr;
+  }
+
+  main section.order div.online-order div.wrap form {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    text-align: center;
+  }
+
+  header div {
+    justify-content: center;
+    align-items: center;
+  }
+
+  main section.order div.online-order h1 {
+    font-size: 6vw;
+  }
+
+  main section.order div.online-order div.wrap form select {
+    width: 60vw;
+  }
+
+  main section.order div.online-order div.wrap form input {
+    width: 60vw;
+  }
+}
