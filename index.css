@@ -31,7 +31,6 @@ header {
   width: 100%;
   height: 100%;
   font-style: italic;
-  border-bottom: 2px solid #ffcda2;
   background-image: linear-gradient(
     -10deg,
     var(--secondary-color),
@@ -115,7 +114,6 @@ main article.banner {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
-  border-bottom: 2px solid var(--primary-color);
   animation-name: banner;
   animation-iteration-count: infinite;
   animation-duration: 20s;
@@ -157,7 +155,7 @@ main article.banner div.overlay div.text {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #f2edd7ff;
+  color: rgb(199, 199, 199);
   text-shadow: white 0 0 5px;
 }
 
@@ -178,7 +176,6 @@ main section.choises {
   width: 100%;
   height: 100%;
   padding: 50px 0;
-  border-bottom: var(--border-bottom);
 }
 
 main section.choises div {
@@ -210,7 +207,6 @@ main section.about {
   height: 100%;
   padding: 200px 0;
   background-image: linear-gradient(70deg, #f1f4ffff, #a2a2a1ff);
-  border-bottom: 2px solid var(--primary-color);
 }
 
 main section.about div {
