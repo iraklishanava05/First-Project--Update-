@@ -36,10 +36,10 @@
   }
 
   main section.order div.online-order div.wrap form select {
-    width: 60vw;
+    width: 80vw;
   }
 
   main section.order div.online-order div.wrap form input {
-    width: 60vw;
+    width: 80vw;
   }
 }
